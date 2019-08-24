@@ -1,7 +1,13 @@
 # require modules here
 require 'pry'
 require "yaml"
-
+# We will first start by defining a method and passing a parameter(file) 
+# we will then assign a variable emoticons = Yaml.load_file(file)
+# We create a new hash called new_emos = {:get_meaning => {}, to store meanings of these emoticon, and another :get_emoticon = {} to store the emoticon itself. 
+# }
+# We will now iterate over the emoticons variable which we assigned earlier to the yaml file with the each method. 
+# We will assign a key and value to this iteration. 
+# Next step will be to assign 
 def load_library (file)
   emoticons =  YAML.load_file(file)
   new_emos = {:get_meaning => {},
@@ -11,7 +17,7 @@ def load_library (file)
     new_emos[:get_meaning][v[1]] = k
     new_emos[:get_emoticon][v[0]] = v[1]
     
- # binding.pry
+  binding.pry
   end
   new_emos
 end
