@@ -1,7 +1,11 @@
 # require modules here
 require 'pry'
 require "yaml"
-# We will first start by defining a method and passing a parameter(file) 
+
+  
+# We will first start with typing require "yaml" at the top of the lab so our code is able to retrieve yaml files.
+
+  We can now start defining a method and passing a parameter(file) 
 # we will then assign a variable emoticons = Yaml.load_file(file)
 # We create a new hash called new_emos = {:get_meaning => {}, to store meanings of these emoticon, and another :get_emoticon = {} to store the emoticon conversion fron english to japanese.
 # }
@@ -19,19 +23,6 @@ require "yaml"
 # :get_emoticon=>{"O:)"=>"☜(⌒▽⌒)☞", ">:("=>"ヽ(ｏ`皿′ｏ)ﾉ"}}
  
 # Well done. You have succesfully broken it down and created the yaml file as required by the lab.
-
-def load_library (file)
-  emoticons =  YAML.load_file(file)
-  new_emos = {:get_meaning => {},
-             :get_emoticon => {}
-  }
-    emoticons.each do |k,v| 
-    new_emos[:get_meaning][v[1]] = k
-    new_emos[:get_emoticon][v[0]] = v[1]
-  end
-  new_emos
-end
-
 
 
 # In this method we will be retrieving the japanese emoticons
@@ -64,6 +55,28 @@ result = "(＾ｖ＾)"
 # result will be = "sad" or any other english meaning to japanese emoticon.
 
 Thank you for reading. I hope i was able to clarify this lab. I have done this lab 3 times to understand it fully. I am just starting the course and this lab was very daunting among the few others. But nevertheless they are not impossible to do so. Dont give up and enjoy the process. 
+
+
+
+
+
+
+
+
+
+def load_library (file)
+  emoticons =  YAML.load_file(file)
+  new_emos = {:get_meaning => {},
+             :get_emoticon => {}
+  }
+    emoticons.each do |k,v| 
+    new_emos[:get_meaning][v[1]] = k
+    new_emos[:get_emoticon][v[0]] = v[1]
+  end
+  new_emos
+end
+
+
 
  def get_japanese_emoticon(path, emoticon)
   
