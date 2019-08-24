@@ -50,7 +50,7 @@ end
   
   emoticons = load_library(path) #call load_library
   result = emoticons[:get_emoticon][emoticon]
-  binding.pry
+  #binding.pry
   if result
     result
   else
