@@ -7,7 +7,12 @@ require "yaml"
 # }
 # We will now iterate over the emoticons variable which we assigned earlier to the yaml file with the each method. 
 # We will assign a key and value to this iteration. 
-# Next step will be to assign 
+# Next step will be is to use binding.pry to see what our key and values are. 
+K should be the meaning of the emoticons and V should be the english and japanese emotiocons. 
+We can now assign these emoticons to into our new hash we created earlier. 
+new_emos[:get_meaning][v[1]] will give us the japanese emoticon 
+
+
 def load_library (file)
   emoticons =  YAML.load_file(file)
   new_emos = {:get_meaning => {},
