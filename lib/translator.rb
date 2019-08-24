@@ -48,6 +48,23 @@ end
 when you check binding.pry result will be something like this.
 result = "(＾ｖ＾)"
 
+
+# In this method we will be retrieving the english meanings to Japanese emoticons method which we done above
+# so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon which will be japanese emoticon. 
+
+# Assign a variable name emoticons to load_libray(path). This will load the yaml file. 
+# Assign result variable to emoticons[:get_emoticon][emoticon]
+# This will pull our english meanings  and will be assigned to the result variable. Please note and my apologies for not using different variable as emoticon and emoticons are not the same.
+
+# We will then issue an if statement to check if result(which is now a english menaing) is true if it is true then 
+# we will return result. 
+# else 
+#   "Sorry, that emoticon was not found.". 
+
+# result will be = "sad" or any other english meaning to japanese emoticon.
+
+Thank you for reading. I hope i was able to clarify this lab. I have done this lab 3 times to understand it fully. I am just starting the course and this lab was very daunting among the few others. But nevertheless they are not impossible to do so. Dont give up and enjoy the process. 
+
  def get_japanese_emoticon(path, emoticon)
   
   emoticons = load_library(path) #call load_library
@@ -75,18 +92,3 @@ end
   end
 end
 
-# In this method we will be retrieving the english meanings to Japanese emoticons method which we done above
-# so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon which will be japanese emoticon. 
-
-# Assign a variable name emoticons to load_libray(path). This will load the yaml file. 
-# Assign result variable to emoticons[:get_emoticon][emoticon]
-# This will pull our english meanings  and will be assigned to the result variable. Please note and my apologies for not using different variable as emoticon and emoticons are not the same.
-
-# We will then issue an if statement to check if result(which is now a english menaing) is true if it is true then 
-# we will return result. 
-# else 
-#   "Sorry, that emoticon was not found.". 
-
-# result will be = "sad" or any other english meaning to japanese emoticon.
-
-Thank you for reading. I hope i was able to clarify this lab. I have done this lab 3 times to understand it fully. I am just starting the course and this lab was very daunting among the few others. But nevertheless they are not impossible to do so. Dont give up and enjoy the process. 
