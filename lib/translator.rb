@@ -28,8 +28,6 @@ def load_library (file)
     emoticons.each do |k,v| 
     new_emos[:get_meaning][v[1]] = k
     new_emos[:get_emoticon][v[0]] = v[1]
-    
-  binding.pry
   end
   new_emos
 end
@@ -38,6 +36,7 @@ end
 
 
  def get_japanese_emoticon(path, emoticon)
+   binding.pry
   emoticons = load_library(path) #call load_library
   result = emoticons[:get_emoticon][emoticon]
   if result
