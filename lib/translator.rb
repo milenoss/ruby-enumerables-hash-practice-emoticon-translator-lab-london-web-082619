@@ -34,7 +34,8 @@ end
 
 
 
-
+In this method we will be retrieving the japanese emoticons
+so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon. 
  def get_japanese_emoticon(path, emoticon)
   
   emoticons = load_library(path) #call load_library
