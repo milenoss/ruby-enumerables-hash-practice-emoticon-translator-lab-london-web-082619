@@ -45,8 +45,8 @@ end
 # we will return result. 
 # else 
 #   "Sorry, that emoticon was not found.". 
-
-result = 
+when you check binding.pry result will be something like this.
+result = "(＾ｖ＾)"
 
  def get_japanese_emoticon(path, emoticon)
   
@@ -88,3 +88,5 @@ end
 #   "Sorry, that emoticon was not found.". 
 
 # result will be = "sad" or any other english meaning to japanese emoticon.
+
+Thank you for reading. I hope i was able to clarify this lab. I have done this lab 3 times to understand it fully. I am just starting the course and this lab was very daunting among the few others. But nevertheless they are not impossible to do so. Dont give up and enjoy the process. 
