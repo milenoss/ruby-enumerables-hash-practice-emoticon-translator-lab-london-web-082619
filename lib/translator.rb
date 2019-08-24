@@ -3,7 +3,7 @@ require 'pry'
 require "yaml"
 # We will first start by defining a method and passing a parameter(file) 
 # we will then assign a variable emoticons = Yaml.load_file(file)
-# We create a new hash called new_emos = {:get_meaning => {}, to store meanings of these emoticon, and another :get_emoticon = {} to store the emoticon itself. 
+# We create a new hash called new_emos = {:get_meaning => {}, to store meanings of these emoticon, and another :get_emoticon = {} to store the emoticon conversion fron english to japanese.
 # }
 # We will now iterate over the emoticons variable which we assigned earlier to the yaml file with the each method. 
 # We will assign a key and value to this iteration. 
@@ -12,8 +12,13 @@ K should be the meaning of the emoticons and V should be the english and japanes
 We can now assign these emoticons to into our new hash we created earlier. 
 new_emos[:get_meaning][v[1]] will give us the japanese emoticon and we will assing it to the meaning K. 
 new_emos[:get_emoticon][v[0]] = v[1]. After that we will now will assign v[0] to the japanese one v[1].
+we will end the method and return new_emos. 
+When you check what new_emos values are in bindin.pry or irb. It should give you this result. 
 
-
+{:get_meaning=>{"☜(⌒▽⌒)☞"=>"angel", "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"},
+ :get_emoticon=>{"O:)"=>"☜(⌒▽⌒)☞", ">:("=>"ヽ(ｏ`皿′ｏ)ﾉ"}}
+ 
+ Well done. You have succesfully broken it down and created the yaml file as required by the lab.
 
 def load_library (file)
   emoticons =  YAML.load_file(file)
@@ -28,6 +33,9 @@ def load_library (file)
   end
   new_emos
 end
+
+
+
 
  def get_japanese_emoticon(path, emoticon)
   emoticons = load_library(path) #call load_library
