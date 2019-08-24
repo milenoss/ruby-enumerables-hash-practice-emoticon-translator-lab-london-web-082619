@@ -35,7 +35,11 @@ end
 
 
 In this method we will be retrieving the japanese emoticons
-so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon. 
+so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon which will be english emoticon. 
+
+Assign a variable name emoticons to load_libray(path). This will load the yaml file. 
+Assign result variable to emoticons[:get_emoticon][emoticon]
+This will pull our japanese emoticon and 
  def get_japanese_emoticon(path, emoticon)
   
   emoticons = load_library(path) #call load_library
