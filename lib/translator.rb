@@ -46,11 +46,13 @@ end
 # else 
 #   "Sorry, that emoticon was not found.". 
 
+result = 
+
  def get_japanese_emoticon(path, emoticon)
   
   emoticons = load_library(path) #call load_library
   result = emoticons[:get_emoticon][emoticon]
-  #binding.pry
+  binding.pry
   if result
     result
   else
@@ -85,4 +87,4 @@ end
 # else 
 #   "Sorry, that emoticon was not found.". 
 
-result will be = "sad"
+# result will be = "sad" or any other english meaning to japanese emoticon.
