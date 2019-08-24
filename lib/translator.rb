@@ -85,4 +85,4 @@ end
 # else 
 #   "Sorry, that emoticon was not found.". 
 
-result will be = 
+result will be = "sad"
