@@ -36,9 +36,10 @@ end
 
 
  def get_japanese_emoticon(path, emoticon)
-   binding.pry
+  
   emoticons = load_library(path) #call load_library
   result = emoticons[:get_emoticon][emoticon]
+  binding.pry
   if result
     result
   else
