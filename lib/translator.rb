@@ -73,14 +73,16 @@ end
   end
 end
 
-# In this method we will be retrieving the meanings to Japanese emoticons method which we done above
-# so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon which will be english emoticon. 
+# In this method we will be retrieving the english meanings to Japanese emoticons method which we done above
+# so we will pass two parameters in the method. One will be the path of yaml file and another will be the emoticon which will be japanese emoticon. 
 
 # Assign a variable name emoticons to load_libray(path). This will load the yaml file. 
 # Assign result variable to emoticons[:get_emoticon][emoticon]
-# This will pull our japanese emoticon and will be assigned to the result variable. Please note and my apologies for not using different variable as emoticon and emoticons are not the same.
+# This will pull our english meanings  and will be assigned to the result variable. Please note and my apologies for not using different variable as emoticon and emoticons are not the same.
 
-# We will then issue an if statement to check if result(which is our japanese emoticon) is true if it is true then 
+# We will then issue an if statement to check if result(which is now a english menaing) is true if it is true then 
 # we will return result. 
 # else 
 #   "Sorry, that emoticon was not found.". 
+
+result will be = 
