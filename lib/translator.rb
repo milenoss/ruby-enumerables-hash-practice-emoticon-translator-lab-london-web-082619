@@ -10,7 +10,8 @@ require "yaml"
 # Next step will be is to use binding.pry to see what our key and values are. 
 K should be the meaning of the emoticons and V should be the english and japanese emotiocons. 
 We can now assign these emoticons to into our new hash we created earlier. 
-new_emos[:get_meaning][v[1]] will give us the japanese emoticon 
+new_emos[:get_meaning][v[1]] will give us the japanese emoticon and we will assing it to the meaning K. 
+
 
 
 def load_library (file)
